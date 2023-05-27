@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+ 
+*{
+ box-sizing: border-box;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+ background-color: hsl(216, 50%, 16%);
+ width: 90%;
+ height: 580px;
+ margin: 0 auto;
+ margin-top: 40px;
+ border-radius: 14px;
+}
+
+.img-container{
+ display: flex;
+ justify-content: center;
+ border-radius: 14px;
+ transition: filter 0.3s ease-in-out;
+}
+
+img{
+ display: inline-block;
+ width: 88%;
+ height: auto;
+ border-radius: 14px;
+ margin: 18px 0px 0px 0px;
+}
+
+.img-container img:hover {
+  filter: brightness(90%);
+  cursor: pointer
+}
+
+.content-box{
+ margin: 20px;
+}
+
+h3{
+ color: white;
+ font:normal 600 24px outfit
+}
+
+p{
+ color: hsl(215, 51%, 70%);
+ font:normal 300 17px outfit;
+ line-height: 1.5;
+}
+
+.ethereum{
+color:hsl(178, 100%, 50%) ;
+float: left;
+font:normal 400 17px outfit;
+margin-top:0px ;
+}
+
+.clock{
+float: right;
+margin-top:-2px ;
+}
+
+.line {
+ clear: both;
+ border-top: 2px solid hsl(215, 32%, 27%);
+}
+
+.creator{
+ margin-top:0px ;
+ clear: both;
+}
+
+.creator img{
+ margin-top:16px ;
+ width:40px;
+ height: auto;
+}
+
+.creator p{
+ margin:-36px 0px 0px 54px;
+}
+
+span{
+  color: white;
+  font:normal 300 17px outfit
+}
+
+h3:hover,span:hover{
+  color:hsl(178, 100%, 50%);
+  cursor: pointer
+}
+
+footer{
+  text-align: center;
+  font:normal 300 14px outfit;
+  color: white;
+  margin-top: 40px;
+}
+footer a{
+  color:hsl(178, 100%, 50%);
+  text-decoration: none;
+}
+
+ @media screen and (min-width: 612px) and (max-width: 1440px) {
+  .container{
+   width: 24%;
+   height: 580px;
+   margin-top: 30px;
+  }
+
+  img{
+   margin: 22px 0px 0px 0px;
+  }
+
+  footer{
+  margin-top: 30px;
+}
+
+ }
